@@ -41,6 +41,7 @@ In the healthcare industry, you have various clinical IT systems that have been 
 [Cloud Healthcare API](https://cloud.google.com/healthcare/docs) fills the gap between the healthcare sector's existing infrastructure and cloud services, such as Google Cloud, by providing a managed solution for both storing and accessing healthcare data.
 
 ![healthcare-api-bridge](img/2020-05-17-14-56-42.png)
+
 (Source: Google Cloud Next 2019—Real-Time, Serverless Predictions With Google Cloud Healthcare API)
 
 ### Platform-as-a-Service
@@ -93,7 +94,7 @@ Let's begin by activating Google Cloud Shell in [Cloud Console](console.cloud.go
 
 - Clicking the **Activate Cloud Shell** button (**>_**) on the top right toolbar:
 
-![activate-cloud-shell](img/2020-05-15-23-24-09.png)
+<center><img src="img/2020-05-15-23-24-09.png" width="700"></center>
 
 - Then, click **Continue** in a new tab that appears in the bottom half of the screen. Your Cloud Shell should be ready.
 
@@ -108,7 +109,7 @@ The steps below will show you how to create a new project for your Cloud Healthc
 - Go to the **[Manage Resources](https://console.cloud.google.com/cloud-resource-manager)** page. 
 - Select **Create Project**.
 
-![manage-resources](img/2020-05-15-23-08-01.png)
+<center><img src="img/2020-05-15-23-08-01.png" width="400"></center>
 
 - In the **New Project** window, enter a project name. In this example, you'll be using "**myhealthcareapiproject**".
 
@@ -116,13 +117,13 @@ The steps below will show you how to create a new project for your Cloud Healthc
 
 - Your panel should look like this:
 
-![new-project](img/2020-05-19-18-51-40.png)
+<center><img src="img/2020-05-19-18-51-40.png" width="400"></center>
 
 > **Note:** A project ID must start with a lowercase letter, and can contain only ASCII letters, digits, and hyphens, and must be between six and 30 characters. It is unique and when you choose it or any resource names, please do not include any sensitive information in them.
 
 - Next, go to the [Dashboard](https://console.cloud.google.com/home) page, click **Select a project** from a drop-down list at the top of the page, and then click on your new project's name. If you have many projects you can use the search bar to find it.
 
-![select-project](img/2020-05-19-18-56-06.png)
+<center><img src="img/2020-05-19-18-56-06.png" width="700"></center>
 
 ### In Cloud Shell
 
@@ -146,25 +147,26 @@ Next, you need to enable the API.
 
 - Under the **Navigation Menu**, go to **APIs & Services** > **Library**:
 
-![apis-services-library](img/2020-05-19-22-41-00.png)
+<center><img src="img/2020-05-19-22-41-00.png" width="400"></center>
 
 - You should be greeted with the "Welcome to the API library" message. 
 
 > **Note:** If you see the **APIs and Services** dashboard, click **Enable APIs and Services**
 
-- In the search bar enter "healthcare API".
+- In the search bar enter "**healthcare API**".
 
-![search-healthcare-api](img/2020-05-19-19-04-23.png)
+<center><img src="img/2020-05-19-19-04-23.png" width="500"></center>
 
 - Click on **Cloud Healthcare API** and select **Enable**.
 
 - You should be greeted with the Cloud Healthcare API panel:
 
-![cloud-healthcare-panel](img/2020-05-18-17-49-23.png)
+<center><img src="img/2020-05-18-17-49-23.png" width="800"></center>
+
 
 > **Note:** Alternatively, you select **Healthcare** under **Big Data** in the **Navigation Menu** and you will greeted with a panel where you can select **Enable** to choose the API:
 
-![healthcare-api-button](img/2020-05-19-19-06-35.png)
+<center><img src="img/2020-05-19-19-06-35.png" width="500"></center>
 
 ### In Cloud Shell
 
@@ -188,27 +190,27 @@ Having created a project and enabled Cloud Healthcare API, the next steps are to
 
 - Click on the **Navigation Menu** and under **Big Data** go to **Healthcare**:
 
-![navigate-healthcare](img/2020-05-18-18-13-00.png)
+<center><img src="img/2020-05-18-18-13-00.png" width="200"></center>
 
 - Select **Create Dataset**:
 
-![create-dataset-button](img/2020-05-19-19-31-14.png)
+<center><img src="img/2020-05-19-19-31-14.png" width="400"></center>
 
 - Name the dataset. In this example, you will be using "**mydataset**".
 
 - Choose a data center region for your project where Cloud Healthcare API is available (see the [full list of available locations](https://cloud.google.com/healthcare/docs/concepts/regions)). In this tutorial, you will be using `us-central1` (based in Iowa, USA).
 
-![choose-create-dataset](img/2020-05-19-19-33-46.png)
+<center><img src="img/2020-05-19-19-33-46.png" width="400"></center>
 
 - Click **Create**. 
 
 - In the Cloud Healthcare panel you should see the name of your newly-created dataset—**"mydataset"**—under Datasets. Click on its name:
 
-![dataset-created](img/2020-05-19-19-35-27.png)
+<center><img src="img/2020-05-19-19-35-27.png" width="500"></center>
 
 - You are now in **Dataset** > **Data Stores** view. Select **Create Data Store**:
 
-![create-data-store](img/2020-05-19-19-36-59.png)
+<center><img src="img/2020-05-19-19-36-59.png" width="400"></center>
 
 - Under **Data Store Settings**:
     - Select type **FHIR**. 
@@ -220,7 +222,7 @@ Having created a project and enabled Cloud Healthcare API, the next steps are to
 
 - Your configurations should look as follows:
 
-![setup-fhir-store](img/2020-05-19-19-38-06.png)
+<center><img src="img/2020-05-19-19-38-06.png" width="350"></center>
 
 - Click **Create** and notice that your new data store is now listed in the panel.
 
@@ -253,15 +255,15 @@ You now need to create a Cloud Storage bucket where you can import electronic he
 
 - Select **Storage** under the **Storage** topic in the **Navigation Menu**:
 
-![storage](img/2020-05-19-15-15-24.png)
+<center><img src="img/2020-05-19-15-15-24.png" width="200"></center>
 
 - Click **Create Bucket**:
 
-![](img/2020-05-19-20-48-28.png)
+<center><img src="img/2020-05-19-20-48-28.png" width="400"></center>
 
 - Set the name to something unique and the region to `us-east1`. You can read the bucket naming guidelines [here](https://cloud.google.com/storage/docs/naming).
 
-![](img/2020-05-19-20-49-56.png)
+<center><img src="img/2020-05-19-20-49-56.png" width="300"></center>
 
 - Click **Create**.
 
@@ -301,17 +303,17 @@ Your next step is to set up appropriate permissions for Cloud Healthcare API to 
 
 - Under the **Navigation Menu**, go to **IAM & Admin**:
 
-![iamservices-admin](img/2020-05-19-16-11-19.png)
+<center><img src="img/2020-05-19-16-11-19.png" width="200"></center>
 
-- In the **IAM** panel where it says **Permissions for project "{PROJECT_ID}"** scroll down or use keyword search to find the word **"healthcare"** in the **Member** column. You should locate the Cloud Healthcare service agent name with the account domain **@gcp-sa-healthcare.iam.gserviceaccount.com**.
+- In the **IAM** panel where it says **Permissions for project "{PROJECT_ID}"** scroll down or use keyword search to find the word "**healthcare**" in the **Member** column. You should locate the Cloud Healthcare service agent name with the account domain **@gcp-sa-healthcare.iam.gserviceaccount.com**.
 
 - Select the **pencil icon** to the right of the service agent's name to start editing permissions. 
 
-![select-edit-iam](img/2020-05-19-16-10-37.png)
+<center><img src="img/2020-05-19-16-10-37.png" width="800"></center>
 
 - In the **Edit Permissions** window add two new roles under **Select a Role** separately: **Storage Object Admin** and **BigQuery Admin**:
 
-![](img/2020-05-19-16-21-05.png)
+<center><img src="img/2020-05-19-16-21-05.png" width="400"></center>
 
 - Click **Save** to confirm changes.
 
@@ -364,6 +366,10 @@ In this example, you will be using a public dataset called **the Synthea Generat
 
 First, you will be moving it to the bucket from another existing Google Cloud bucket that hosts the dataset. Then you can ingest it into the data store you created earlier with Cloud Healthcare API.
 
+It is recommended to use just Cloud Shell in this section of the tutorial:
+
+### In Cloud Shell
+
 - Use the `gsutil cp` [command](https://cloud.google.com/storage/docs/gsutil/commands/cp) to copy the dataset from the internal Google Cloud bucket to your bucket. The public dataset is stored at `gs://gcp-public-data--synthea-fhir-data-1m-patients`:
 
 ```bash
@@ -390,7 +396,7 @@ gcloud beta healthcare fhir-stores import gcs $FHIR_STORE_ID --dataset=$DATASET_
 
 > **Note:** This can be a lengthy process and you can monitor the progress in the Cloud Healthcare panel under **Dataset** > **Operations**:
 
-![monitor](img/2020-05-19-17-38-11.png)
+<center><img src="img/2020-05-19-17-38-11.png" width="800"></center>
 
 ## Explore the dataset with BigQuery
 
@@ -400,24 +406,25 @@ The **Synthea Generated Synthetic Data in FHIR** dataset is already available in
 
 - Click on the **Navigation Menu** and under **Big Data** go to **BigQuery**:
 
-![bq](img/2020-05-19-17-45-05.png)
+<center><img src="img/2020-05-19-17-45-05.png" width="200"></center>
 
 - On the left hand side next to **Resources** click **Add Data** and then choose **Explore public datasets**.
 
-![add-data-bq-explore](img/2020-05-19-20-40-30.png)
+<center><img src="img/2020-05-19-20-40-30.png" width="250"></center>
 
-- Type **FHIR** in the search bar and press Enter:
-![bq-fhir-search](img/2020-05-18-22-21-32.png)
+- Type **FHIR** in the search bar, press Enter, and select the Synthea dataset:
+
+<center><img src="img/2020-05-18-22-21-32.png" width="450"></center>
 
 - Click **View Dataset**.
 
-![bq-Synthea Generated Synthetic Data in FHIR](img/2020-05-18-22-21-15.png)
+<center><img src="img/2020-05-18-22-21-15.png" width="400"></center>
 
 - On the left hand size of the BigQuery panel, navigate to **`bigquery-public-data`** > **`fhir_synthea`**. This is the Synthea Generated Synthetic Data in FHIR dataset.
 
 - Click on the **`medication request`** table. Then, select **Details**:
 
-![medicrequest-synthea-table-bq](img/2020-05-19-22-19-53.png)
+<center><img src="img/2020-05-19-22-19-53.png" width="700"></center>
 
 - Notice that this table is almost 7 GB in size.
 
@@ -479,7 +486,7 @@ ORDER BY last_name
 
 - You can use this [link](https://console.cloud.google.com/bigquery?sq=1002644616445:d3f32c6bf9d94c6ab65b6fb9999b70f9) to run this Google Cloud query automatically. Note that it took less than 1 second to process 1.3 GB of data:
 
-![bq-sql-sample-query-1](img/2020-05-19-22-27-03.png)
+<center><img src="img/2020-05-19-22-27-03.png" width="700"></center>
 
 Overall, there should be 272,372 synthetic data points in the results, including 213,162 with hypertension, 23,472 with diabetes, and 35,738 with both.
 
