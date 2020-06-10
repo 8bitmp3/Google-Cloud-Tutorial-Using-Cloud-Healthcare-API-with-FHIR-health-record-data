@@ -56,7 +56,7 @@ Cloud Healthcare API is a platform-as-a-service (PaaS) that supports formats and
 
 ### Projects, datasets, and stores
 
-Cloud Healthcare API is an API service, where you have you have a hierarchy ranging a **[project](https://cloud.google.com/healthcare/docs/concepts/projects-datasets-data-stores#projects)** to a **[dataset](https://cloud.google.com/healthcare/docs/concepts/projects-datasets-data-stores#datasets_and_data_stores)** (such as clinical images or messages) and, finally, to a **[data store](https://cloud.google.com/healthcare/docs/concepts/projects-datasets-data-stores#datasets_and_data_stores)**, which implements the API's modalities.
+Cloud Healthcare API is an API service, where you have a hierarchy ranging a **[project](https://cloud.google.com/healthcare/docs/concepts/projects-datasets-data-stores#projects)** to a **[dataset](https://cloud.google.com/healthcare/docs/concepts/projects-datasets-data-stores#datasets_and_data_stores)** (such as clinical images or messages) and, finally, to a **[data store](https://cloud.google.com/healthcare/docs/concepts/projects-datasets-data-stores#datasets_and_data_stores)**, which implements the API's modalities.
 
 To demonstrate the hierarchy, let's take a look at a REST path to the API:
 
@@ -420,7 +420,7 @@ The **Synthea Generated Synthetic Data in FHIR** dataset is already available in
 
 <center><img src="img/2020-05-18-22-21-15.png" width="400"></center>
 
-- On the left hand size of the BigQuery panel, navigate to **`bigquery-public-data`** > **`fhir_synthea`**. This is the Synthea Generated Synthetic Data in FHIR dataset.
+- On the left hand size of the BigQuery panel, navigate to **`bigquery-public-data`** > **`fhir_synthea`**. This is the Synthea Generated Synthetic Data in the FHIR dataset.
 
 - Click on the **`medication request`** table. Then, select **Details**:
 
