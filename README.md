@@ -89,7 +89,7 @@ Having created a project and enabled Cloud Healthcare API, the next steps are to
 
 - Under **FHIR Store Configuration**, select **STU3**.
 
-> **Note:** The FHIR version of a FHIR store can be DSTU2, STU3, or R4. You can read about STU3 [here](https://www.hl7.org/fhir/STU3/) and example the version history [here](https://www.hl7.org/fhir/history.html).
+> **Note:** The FHIR version of a FHIR store can be DSTU2, STU3, or R4. You can read about STU3 [here](https://www.hl7.org/fhir/STU3/) and its version history [here](https://www.hl7.org/fhir/history.html) on the Health Level Seven International (HL7) website.
 
 - Your configurations should look as follows:
 
