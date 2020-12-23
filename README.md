@@ -1,6 +1,6 @@
 # Using Cloud Healthcare API with FHIR health record data
 
-This is an example of a Google Cloud [tutorial](https://github.com/8bitmp3/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data/blob/master/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data.md) I wrote when learning how to use the Cloud Healthcare API.
+_This is an sample from a Google Cloud [tutorial](https://github.com/8bitmp3/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data/blob/master/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data.md) I wrote when learning how to use the Cloud Healthcare API._
 
 Cloud Healthcare API is a platform-as-a-service (PaaS) that supports formats and protocols that are native to the healthcare industry. And, because data security is paramount in healthcare, the API covers identity management, network security, audit logging, storage and encryption, among other features. [Cloud Healthcare API](https://cloud.google.com/healthcare/docs) fills the gap between the healthcare sector's existing infrastructure and cloud services, such as Google Cloud, by providing a managed solution for both storing and accessing healthcare data.
 
@@ -126,3 +126,5 @@ gcloud beta healthcare fhir-stores create myfhirstore \
 | `<D>`      | Dataset identifier                     | mydataset                 |
 | `<type>`   | Data type slug identifier              | fhir, hl7v2, dicom        |
 | `<S>`      | Store identifier                       | myfhirstore               |
+
+(_For the full tutorial on Using Cloud Healthcare API with FHIR health record data, click [here](https://github.com/8bitmp3/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data/blob/master/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data.md)._)
