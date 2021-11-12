@@ -1,6 +1,6 @@
 # Using Cloud Healthcare API with FHIR health record data
 
-_This is an sample from a Google Cloud [tutorial](https://github.com/8bitmp3/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data/blob/master/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data.md) I wrote when learning how to use the Cloud Healthcare API._
+_This is a sample from a Google Cloud [tutorial](https://github.com/8bitmp3/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data/blob/master/Google-Cloud-Tutorial-Using-Cloud-Healthcare-API-with-FHIR-health-record-data.md) I wrote when learning how to use the Cloud Healthcare API._
 
 Cloud Healthcare API is a platform-as-a-service (PaaS) that supports formats and protocols that are native to the healthcare industry. And, because data security is paramount in healthcare, the API covers identity management, network security, audit logging, storage and encryption, among other features. [Cloud Healthcare API](https://cloud.google.com/healthcare/docs) fills the gap between the healthcare sector's existing infrastructure and cloud services, such as Google Cloud, by providing a managed solution for both storing and accessing healthcare data.
 
